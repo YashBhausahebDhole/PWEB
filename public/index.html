@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="welcome-message">
+    <h1>WELCOME TO FLYCHAT <i class="fas fa-comments"></i></h1>
+  </div>
+  <div class="main-container">
+    <div class="container">
+      <div class="form-container">
+        <div class="form-details">
+          <form id="createAccountForm">
+            <h2>Create Account <i class="fas fa-user-plus"></i></h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <button type="submit">Create Account <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+        <div class="image-container">
+          <img src="images/create-account.jpg" alt="Create Account Image">
+        </div>
+      </div>
+      <div id="accountCreatedPopup" class="popup">
+        <div class="popup-content">
+          <span id="closePopupBtn" class="close-btn">&times;</span>
+          <i class="fas fa-check-circle" style="font-size: 3cm; color: green;"></i>
+          <p>🎉 Account created successfully! 🎉</p>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <h2>Our Services <i class="fas fa-concierge-bell"></i></h2>
+      <div class="service-tiles">
+        <div class="service-tile">
+          <h3>Real-time Obscene Monitoring <i class="fas fa-eye"></i></h3>
+          <p>Our system continuously monitors your child's online activities for any obscene content. This includes scanning messages, posts, and other interactions for inappropriate language or images. Alerts are sent immediately if any obscene content is detected, allowing you to take swift action.</p>
+        </div>
+        <div class="service-tile">
+          <h3>Harmful Word Blocking <i class="fas fa-ban"></i></h3>
+          <p>Our system blocks any harmful words or phrases from being used by your child. This feature helps prevent exposure to bullying, harassment, and other negative interactions. You can customize the list of blocked words to suit your family's needs.</p>
+        </div>
+        <div class="service-tile">
+          <h3>SMS Notification to Parents <i class="fas fa-sms"></i></h3>
+          <p>We send instant notifications to parents if any suspicious activity is detected. This includes attempts to access restricted content, use of harmful language, or interactions with unknown contacts. Stay informed and take action to protect your child.</p>
+        </div>
+      </div>
+    </div>
+    <div class="courses">
+      <h2>Our Courses <i class="fas fa-book"></i></h2>
+      <div class="course-tiles">
+        <div class="course-tile">
+          <h3>Child Safety Awareness <i class="fas fa-shield-alt"></i></h3>
+          <p>Learn about the best practices to keep your child safe online. This course covers topics such as recognizing online dangers, setting up parental controls, and educating your child about safe internet use.</p>
+          <a href="https://example.com/child-safety-awareness" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="course-tile">
+          <h3>Parental Control Tools <i class="fas fa-tools"></i></h3>
+          <p>Get to know the tools available to monitor and control your child's online activities. This course provides an overview of various parental control software and apps, and how to use them effectively.</p>
+          <a href="https://example.com/parental-control-tools" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="course-tile">
+          <h3>Cyberbullying Prevention <i class="fas fa-user-shield"></i></h3>
+          <p>Understand how to prevent and address cyberbullying. This course offers strategies for identifying signs of cyberbullying, supporting your child, and taking appropriate action to stop the bullying.</p>
+          <a href="https://example.com/cyberbullying-prevention" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="course-tile">
+          <h3>Social Media Safety <i class="fas fa-lock"></i></h3>
+          <p>Tips and tricks to ensure your child's safety on social media platforms. Learn how to set privacy settings, recognize potential threats, and teach your child to use social media responsibly.</p>
+          <a href="https://example.com/social-media-safety" target="_blank">Learn More <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
