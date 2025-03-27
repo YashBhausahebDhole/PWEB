@@ -28,7 +28,7 @@ document.getElementById('createAccountForm').addEventListener('submit', async (e
   const password = document.getElementById('password').value;
   const confirmPassword = document.getElementById('confirmPassword').value;
 
-  console.log('Form submitted:', { username, email, mobileno, password, confirmPassword });
+  console.log('Form submitted:', { username, email, phone, password, confirmPassword });
 
   if (password !== confirmPassword) {
     alert('Passwords do not match. Please try again.');
@@ -45,12 +45,11 @@ document.getElementById('createAccountForm').addEventListener('submit', async (e
     // Store user data in Firestore
     await addDoc(collection(db, "users"), {
       email: email,
-      mobileno: mobileno,
+      mobileNo: phone, // Updated field name
       name: username,
       password: password,
       uid: user.uid,
-      
-    
+      profileImageUrl: "https://images.rawpixel.com/image_png_8.png" // Added profileImageUrl field
     });
 
     console.log('User data stored in Firestore');
