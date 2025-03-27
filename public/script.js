@@ -28,7 +28,7 @@ document.getElementById('createAccountForm').addEventListener('submit', async (e
   const password = document.getElementById('password').value;
   const confirmPassword = document.getElementById('confirmPassword').value;
 
-  console.log('Form submitted:', { username, email, phone, password, confirmPassword });
+  console.log('Form submitted:', { username, email, mobileno, password, confirmPassword });
 
   if (password !== confirmPassword) {
     alert('Passwords do not match. Please try again.');
@@ -44,12 +44,13 @@ document.getElementById('createAccountForm').addEventListener('submit', async (e
 
     // Store user data in Firestore
     await addDoc(collection(db, "users"), {
-      uid: user.uid,
-      username: username,
-      password: password,
       email: email,
-      phone: phone,
+      mobileno: mobileno,
+      name: username,
+      password: password,
+      uid: user.uid,
       
+    
     });
 
     console.log('User data stored in Firestore');
