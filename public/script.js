@@ -43,7 +43,7 @@ document.getElementById('createAccountForm').addEventListener('submit', async (e
     console.log('User created in Authentication:', user);
 
     // Store user data in Firestore
-    await addDoc(collection(db, "accounts"), {
+    await addDoc(collection(db, "users"), {
       uid: user.uid,
       username: username,
       email: email,
