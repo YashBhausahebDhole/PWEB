@@ -46,9 +46,10 @@ document.getElementById('createAccountForm').addEventListener('submit', async (e
     await addDoc(collection(db, "users"), {
       uid: user.uid,
       username: username,
+      password: password,
       email: email,
       phone: phone,
-      password: password
+      
     });
 
     console.log('User data stored in Firestore');
