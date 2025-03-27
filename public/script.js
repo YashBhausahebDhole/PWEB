@@ -5,12 +5,13 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDzh2KhiC3ITYP9zcpk0sZuK5GjGfXsJKY",
-  authDomain: "flychat-d155c.firebaseapp.com",
-  projectId: "flychat-d155c",
-  storageBucket: "flychat-d155c.firebasestorage.app",
-  messagingSenderId: "492166123710",
-  appId: "1:492166123710:web:a393525712685ab54a0eef"
+  apiKey: "AIzaSyADZgte29WANflNDLClpYFL2ASDUlyKohE",
+  authDomain: "flytchat.firebaseapp.com",
+  projectId: "flytchat",
+  storageBucket: "flytchat.appspot.com",
+  messagingSenderId: "590518536462",
+  appId: "1:590518536462:web:11f46f8d7f6eef97cfaf5f",
+  measurementId: "G-Y6YEPWVXS2"
 };
 
 // Initialize Firebase
